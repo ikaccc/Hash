@@ -12,6 +12,7 @@ public class HashController(IMediator _mediator) : ControllerBase
 {
 
     [HttpGet]
+    [ResponseCache(Duration = 300)] //we could also use in moemory or redis
     [ProducesResponseType(typeof(IEnumerable<HashViewModel>), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<IEnumerable<HashViewModel>>> GetAll()
     {
