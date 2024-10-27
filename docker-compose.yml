@@ -1,0 +1,26 @@
+﻿
+version: '3.4'
+
+services:
+  webapi:
+    image: ${DOCKER_REGISTRY-}webapi
+    build:
+      context: .
+      dockerfile: BackendBlocks.WebApi/Dockerfile
+    
+  portainer:
+    image: portainer/portainer-ce
+
+  rabbitmq:
+    image: rabbitmq:3-management
+
+  hash.processor:
+    image: ${DOCKER_REGISTRY-}hash.processor
+    build:
+      context: .
+      dockerfile: BackendBlocks.Hahsh.Processor/Dockerfile
+
+volumes:
+  portainer_data:
+
+

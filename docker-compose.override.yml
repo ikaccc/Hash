@@ -1,0 +1,44 @@
+version: '3.4'
+
+services:
+
+  portainer:
+    container_name: portainer
+    restart: always
+    ports:
+      - 9000:9000
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+    restart: always
+
+  rabbitmq:
+    container_name: rabbitmq
+    restart: always
+    ports:
+      - 5672:5672
+      - 15672:15672
+    restart: always
+
+  wepapi:
+    container_name: webapi
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8000
+    ports:
+      - 8000:8000
+    logging:
+      options:
+        max-size: "500m"
+        max-file: "2"
+    restart: always  livetracking-processor:
+
+  hash.processor:
+    logging:
+      options:
+        max-size: "500m"
+        max-file: "2"
+    restart: always
+
+ 
+

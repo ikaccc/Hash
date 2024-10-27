@@ -31,6 +31,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BackendBlocks.Processors", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackednBlocks.Hash.Processor", "BackednBlocks.Hash.Processor\BackednBlocks.Hash.Processor.csproj", "{4C5AB321-D3C5-46A8-8A94-7844A41F5F0D}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9ED1D254-4DE6-4229-B3B8-A60383414787}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +75,10 @@ Global
 		{4C5AB321-D3C5-46A8-8A94-7844A41F5F0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C5AB321-D3C5-46A8-8A94-7844A41F5F0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C5AB321-D3C5-46A8-8A94-7844A41F5F0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ED1D254-4DE6-4229-B3B8-A60383414787}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ED1D254-4DE6-4229-B3B8-A60383414787}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ED1D254-4DE6-4229-B3B8-A60383414787}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ED1D254-4DE6-4229-B3B8-A60383414787}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
