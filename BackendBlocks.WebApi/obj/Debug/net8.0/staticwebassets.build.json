@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "BJli+iZxYr3ZH06e6Oj8kadNjy9plIDA+Rch73B9quo=",
+  "Source": "BackendBlocks.WebApi",
+  "BasePath": "_content/BackendBlocks.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

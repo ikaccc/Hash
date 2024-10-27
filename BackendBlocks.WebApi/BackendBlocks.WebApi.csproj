@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Combined' " />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.10">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.9.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BackendBlocks.Core\BackendBlocks.Core.csproj" />
+    <ProjectReference Include="..\BackendBlocks.Infrastructure\BackendBlocks.Infrastructure.csproj" />
+    <ProjectReference Include="..\BackendBlocks.MessageBroker.Publisher\BackendBlocks.MessageBroker.Publisher.csproj" />
+    <ProjectReference Include="..\BackendBlocks.MessageBroker.Client\BackendBlocks.MessageBroker.Client.csproj" />
+    <ProjectReference Include="..\BackendBlocks.QueueService\BackendBlocks.QueueService.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\BackendBlocks.Messages\BackendBlocks.Messages.csproj" />
+    <ProjectReference Include="..\BackendBlocks.MessageBroker.Client\BackendBlocks.MessageBroker.Client.csproj" />
+    <ProjectReference Include="..\BackendBlocks.QueueService\BackendBlocks.QueueService.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.1" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
