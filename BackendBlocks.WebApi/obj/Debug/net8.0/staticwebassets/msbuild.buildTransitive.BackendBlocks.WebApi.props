@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="../buildMultiTargeting/BackendBlocks.WebApi.props" />
-</Project>
