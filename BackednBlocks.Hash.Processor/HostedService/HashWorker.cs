@@ -56,7 +56,7 @@ public class HashWorker : MessageConsumerProcessorBase
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex, "Error sending email");
+            _logger.LogError(ex, "Error handling a message");
             throw;
         }
     }
