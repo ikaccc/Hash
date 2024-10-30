@@ -29,7 +29,7 @@ public class MessagePublisher : IMessagePublisher
             string jsonMessage = JsonSerializer.Serialize(message);
 
             var basicProperties = _channel.CreateBasicProperties();
-            basicProperties.Type = nameof(EventMessageType.CreateHashMessage);
+            basicProperties.Type = message.GetType().Name;
 
             await Task.Run(() => 
             {
